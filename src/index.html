@@ -10,74 +10,40 @@
     <title>JS Exsel</title>
   </head>
   <body>
-    <div id="app" class="container">
-      <div class="exsel">
-        <div class="exsel__header">
-          <input type="text" value="Новая таблица" class="header__input" />
-
-          <div>
-            <button class="header__button">
-              <span class="material-icons"> delete_outline </span>
-            </button>
-            <button class="header__button">
-              <span class="material-icons"> logout </span>
-            </button>
+    <div id="app">
+      <div class="db">
+        <div class="db__header">
+          <h1>Exsel Dashboard</h1>
+        </div>
+        <div class="db__new">
+          <div class="db__view">
+            <a href="#" class="db__create"
+              >Новая <br />
+              таблица</a
+            >
           </div>
         </div>
-
-        <div class="exsel__toolbar">
-          <button class="header__button">
-            <span class="material-icons"> format_align_left </span>
-          </button>
-          <button class="header__button">
-            <span class="material-icons"> format_align_center </span>
-          </button>
-          <button class="header__button">
-            <span class="material-icons"> format_align_right </span>
-          </button>
-          <button class="header__button">
-            <span class="material-icons"> format_bold </span>
-          </button>
-          <button class="header__button">
-            <span class="material-icons"> format_italic </span>
-          </button>
-          <button class="header__button">
-            <span class="material-icons"> format_underlined </span>
-          </button>
-        </div>
-        <div class="exsel__formula">
-          <div class="formula__info">fx</div>
-          <div class="formula__input" contenteditable spellcheck="false"></div>
-        </div>
-        <div class="exsel__table">
-          <div class="table__row">
-            <div class="row-info"></div>
-            <div class="row-data">
-              <div class="column">A</div>
-              <div class="column">B</div>
-              <div class="column">C</div>
-            </div>
+        <div class="db__table db__view">
+          <div class="db__list-header">
+            <span>Название таблицы</span>
+            <span>Дата открытия</span>
           </div>
 
-          <div class="table__row">
-            <div class="row-info">1</div>
-            <div class="row-data">
-              <div class="cell selected" contenteditable spellcheck="false">
-                A1
-              </div>
-              <div class="cell" contenteditable spellcheck="false">B1</div>
-              <div class="cell" contenteditable spellcheck="false">C1</div>
-            </div>
-          </div>
+          <ul class="db__list">
+            <a href="#">
+              <li class="db__record">
+                <span href="#">Таблица номер 1</span>
+                <strong>12.11.2024</strong>
+              </li>
+            </a>
 
-          <div class="table__row">
-            <div class="row-info">2</div>
-            <div class="row-data">
-              <div class="cell">A2</div>
-              <div class="cell">B2</div>
-              <div class="cell">C2</div>
-            </div>
-          </div>
+            <a href="#">
+              <li class="db__record">
+                <span href="#">Таблица номер 2</span>
+                <strong>12.11.2024</strong>
+              </li>
+            </a>
+          </ul>
         </div>
       </div>
     </div>
