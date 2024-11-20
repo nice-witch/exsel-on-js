@@ -9,14 +9,14 @@
   height: variables.$height-formula;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid variables.$color-grey;
+  border-bottom: 1px solid variables.$color-grey_dark;
 
   .formula__info {
     width: variables.$width-cell;
     font-size: 18px;
     font-style: italic;
     text-align: center;
-    border-right: 1px solid variables.$color-grey;
+    border-right: 1px solid variables.$color-grey_dark;
   }
 
   .formula__input {

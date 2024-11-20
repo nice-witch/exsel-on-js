@@ -1,5 +1,62 @@
-@use "variables";
-@use "mixins";
+@use "variables" as variables;
+@use "mixins" as mix;
 
 .exsel__table {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: variables.$height-header + variables.$height-toolbar +
+    variables.$height-formula;
+  padding-bottom: 2px;
+  overflow-x: auto;
+  .table__row {
+    display: flex;
+    min-height: 20px;
+    height: variables.$height-row;
+  }
+
+  .row-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: variables.$width-info-cell;
+    height: 100%;
+    background-color: #f8f9fa;
+    border: 1px solid variables.$color-grey_dark;
+    border-top: none;
+  }
+
+  .row-data {
+    display: flex;
+  }
+
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    min-width: 40px;
+    width: variables.$width-cell;
+    border: 1px solid variables.$color-grey_dark;
+    border-top: none;
+    border-left: none;
+  }
+
+  .cell {
+    min-width: 40px;
+    padding: 5px;
+    width: variables.$width-cell;
+    border: 1px solid variables.$color-grey;
+    border-top: none;
+    border-left: none;
+    color: #111;
+    white-space: nowrap;
+    outline: none;
+
+    &.selected {
+      border: none;
+      outline: 2px solid #3c74ff;
+      z-index: 2;
+    }
+  }
 }
