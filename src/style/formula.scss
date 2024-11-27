@@ -1,0 +1,30 @@
+@use "variables" as variables;
+@use "mixins" as mix;
+
+.exsel__formula {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: variables.$height-header + variables.$height-toolbar;
+  height: variables.$height-formula;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid variables.$color-grey_dark;
+
+  .formula__info {
+    width: variables.$width-cell;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    border-right: 1px solid variables.$color-grey_dark;
+  }
+
+  .formula__input {
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    outline: none;
+    color: variables.$color-black;
+  }
+}
