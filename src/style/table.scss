@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: variables.$width-info-cell;
+    min-width: variables.$width-info-cell;
     height: 100%;
     background-color: #f8f9fa;
     border: 1px solid variables.$color-grey_dark;
